@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Performance Dashboard  |  Dashboard</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="top-bar">
+    <a href="(home)index.html" class="home-btn">🏠 Home</a>
+</div>
+
+<h1>Student Performance Dashboard</h1>
+<p class="subtitle">
+Visualize and analyze student performance using interactive charts.
+</p>
+
+<div class="input-section">
+
+    <h2>Enter Student Details</h2>
+
+    <label>Student Name</label><br>
+    <input type="text" id="studentName" placeholder="Enter student name">
+
+    <br><br>
+
+    <label>Marketing</label><br>
+    <input type="number" id="marketing" min="0" max="100">
+
+    <br><br>
+
+    <label>Accounting</label><br>
+    <input type="number" id="accounting" min="0" max="100">
+
+    <br><br>
+
+    <label>Economics</label><br>
+    <input type="number" id="economics" min="0" max="100">
+
+    <br><br>
+
+    <label>Computer</label><br>
+    <input type="number" id="computer" min="0" max="100">
+
+    <br><br>
+
+    <label>Mathematics</label><br>
+    <input type="number" id="mathematics" min="0" max="100">
+
+    <br><br>
+
+    <button id="generateChart">
+        Generate Chart
+    </button>
+
+    <button id="resetBtn">
+        Reset
+    </button>
+
+</div>
+
+<br><br>
+
+<div class="chart-container">
+  <canvas id="marksChart"></canvas>
+</div>
+
+<div class="result-box" id="resultBox">
+
+    <h2>Student Report</h2>
+
+    <p id="displayName"></p>
+
+    <p id="average"></p>
+
+    <p id="highest"></p>
+
+    <p id="lowest"></p>
+
+    <p id="grade"></p>
+
+</div>
+
+<script type="module" src="./app.js"></script>
+
+</body>
+</html>
